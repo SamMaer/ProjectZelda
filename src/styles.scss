@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    padding-bottom: 70px;
+    .title {
+        font-family: "Comfortaa", cursive;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <h1>Dit is een test</h1>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col" *ngFor="let dog of dogs">
+            <div class="card mx-auto mb-3 " style="width: 18rem;">
+                <img class="card-img-top" src="../../assets/testDog1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">{{dog.name}}</h5>
+                  <p class="card-text">{{dog.name}} is {{dog.age}} jaar oud</p>
+                  <a href="#" class="btn btn-primary">Details</a>
+                </div>
+              </div>
+            
+        </div>
+    </div>
+</div>

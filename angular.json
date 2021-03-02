@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "projectZelda"
+  "defaultProject": "projectZelda",
+  "cli": {
+    "analytics": "7162474d-0958-4058-be74-749dbd57111a"
+  }
 }
