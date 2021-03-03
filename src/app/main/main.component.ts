@@ -1,22 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { Dog } from '../dog';
-import { ZeldaServiceService } from '../zelda-service.service';
+import { ZeldaService } from '../zelda.service';
+
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements OnInit {
-
+export class MainComponent implements OnInit  {
   public dogs: Dog[] = [];
-  
-  constructor(private ds: ZeldaServiceService) { 
-    this.dogs = ds.getDogs()
-  }
 
+  constructor(private zs: ZeldaService) { 
+    this.dogs = zs.getDogs();
+  }
   ngOnInit(): void {
   }
-
-
 }

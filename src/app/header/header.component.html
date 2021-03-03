@@ -3,7 +3,7 @@
         <div class="col">
             <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3 title">
                 <img src="../../assets/zelda foundation.jpg" alt="Logo Zelda Foundation" (click)="Open(content)">
-                <a class="navbar-brand" [routerLink]="'.'">ad<i class="fa fa-paw fa_custom"></i>pt</a>
+                <a class="navbar-brand title" [routerLink]="'.'">ad<i class="fa fa-paw fa_custom"></i>pt</a>
 
                 <!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->
                 <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
@@ -15,7 +15,7 @@
                     <ul class="navbar-nav ml-auto mr-0">
                         <li class="nav-item active">
                             <!-- Step 4: Close the menu when a link is clicked. -->
-                            <a class="nav-link" [routerLink]="" (click)="isMenuCollapsed = true">Features</a>
+                            <a class="nav-link" [routerLink]="['history']" (click)="isMenuCollapsed = true">Geschiedenis</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" [routerLink]="" (click)="isMenuCollapsed = true">Examples</a>
