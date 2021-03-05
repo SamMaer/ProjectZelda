@@ -2,13 +2,25 @@
 
 /* Importing Bootstrap SCSS file. */
 @import "~bootstrap/scss/bootstrap";
+$titleFont : "DM Sans", sans-serif;
+$border : 2px solid purple;
+$mainColor: black;
+$lightColor : lightgrey;
+$contrastColor: purple;
 
 body {
     font-size: 16px;
     font-family: "Comfortaa", cursive;
     padding-bottom: 70px;
-    .title {
-        font-family: "DM Sans", sans-serif;
-        font-size: 1.5rem;
+    h1{
+      border-bottom: $border;
+      font-family: $titleFont;
     }
-}
+
+    .title {
+        font-family: $titleFont;
+        font-size: 1.5rem;
+
+    }
+
+  }
